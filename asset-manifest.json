@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/conversor-temp-react/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/conversor-temp-react/static/js/main.baa9d177.chunk.js",
+    "main.js.map": "/conversor-temp-react/static/js/main.baa9d177.chunk.js.map",
+    "runtime-main.js": "/conversor-temp-react/static/js/runtime-main.4e308e31.js",
+    "runtime-main.js.map": "/conversor-temp-react/static/js/runtime-main.4e308e31.js.map",
+    "static/js/2.e9246205.chunk.js": "/conversor-temp-react/static/js/2.e9246205.chunk.js",
+    "static/js/2.e9246205.chunk.js.map": "/conversor-temp-react/static/js/2.e9246205.chunk.js.map",
+    "static/js/3.3c476ad5.chunk.js": "/conversor-temp-react/static/js/3.3c476ad5.chunk.js",
+    "static/js/3.3c476ad5.chunk.js.map": "/conversor-temp-react/static/js/3.3c476ad5.chunk.js.map",
+    "index.html": "/conversor-temp-react/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/conversor-temp-react/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.e9246205.chunk.js.LICENSE.txt": "/conversor-temp-react/static/js/2.e9246205.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/conversor-temp-react/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e308e31.js",
+    "static/js/2.e9246205.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.baa9d177.chunk.js"
+  ]
+}
