@@ -1,2 +1,0 @@
-(this["webpackJsonpconversor-temp-react"]=this["webpackJsonpconversor-temp-react"]||[]).push([[0],{4:function(e,t,r){"use strict";r.r(t);var c=r(2),n=(r(1),r(3));r.n(n).a.render(Object(c.jsx)("h1",{children:"Teste do React"}),document.getElementById("root"))}},[[4,1,2]]]);
-//# sourceMappingURL=main.d4b03b30.chunk.js.map
