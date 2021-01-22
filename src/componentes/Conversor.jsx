@@ -85,6 +85,7 @@ class Conversor extends React.Component {
     super(props);
     this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
     this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+    this.handleKelvinChange = this.handleKelvinChange.bind(this);
     this.state = {temperatura: '', escala: 'c'};
   }
 
@@ -96,14 +97,20 @@ class Conversor extends React.Component {
     this.setState({escala: 'f', temperatura});
   }
 
+  handleKelvinChange(temperatura) {
+    this.setState({escala: 'k', temperatura});
+  }
+
   render() {
     const escala = this.state.escala;
     const temperatura = this.state.temperatura;
-    /*Operador ternário: verifica se a escala é Celsius ou Fahrenheit para fazer a conversão adequada */
-    const celsius = escala === 'f' ? validarConversao(temperatura, fahrenheitToCelsius) : temperatura;
-    const fahrenheit = escala === 'c' ? validarConversao(temperatura, celsiusToFahrenheit) : temperatura;
+    /*Operador ternário condicional múltiplo: verifica se a escala é Fahrenheit
+    se não for verifica se é kelvin, se não for retorna a temperatura em celsius.*/
+    const celsius = escala === 'f' ? validarConversao(temperatura, fahrenheitToCelsius) : escala === 'k' ? validarConversao(temperatura, kelvinToCelsius) : temperatura;
+    const fahrenheit = escala === 'c' ? validarConversao(temperatura, celsiusToFahrenheit) : escala === 'k' ? validarConversao(temperatura, kelvinToFahrenheit) : temperatura;
+    const kelvin = escala === 'c' ? validarConversao(temperatura, celsiusToKelvin) : escala === 'f' ? validarConversao(temperatura, fahrenheitToKelvin) : temperatura;
 
-/*O que deve ser renderizado: dois componentes Entrada, cada um é renderizado 
+/*O que deve ser renderizado: três componentes Entrada, cada um é renderizado 
 com as props passadas */
     return (
       <div>
@@ -115,6 +122,10 @@ com as props passadas */
           escala="f"
           temperatura={fahrenheit}
           onTemperatureChange={this.handleFahrenheitChange} />
+        <Entrada
+          escala="k"
+          temperatura={kelvin}
+          onTemperatureChange={this.handleKelvinChange} />
       </div>
     );
   }
