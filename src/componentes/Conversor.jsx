@@ -7,11 +7,12 @@ const escalas = {
     k: 'Kelvin'
 };
 
-function toCelsius(fahrenheit) {
+//Funções de conversão
+function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) * 5 / 9;
 }
   
-function toFahrenheit(celsius) {
+function celsiusToFahrenheit(celsius) {
     return (celsius * 9 / 5) + 32;
 }
 
@@ -83,8 +84,8 @@ class Conversor extends React.Component {
     const escala = this.state.escala;
     const temperatura = this.state.temperatura;
     /*Operador ternário: verifica se a escala é Celsius ou Fahrenheit para fazer a conversão adequada */
-    const celsius = escala === 'f' ? validarConversao(temperatura, toCelsius) : temperatura;
-    const fahrenheit = escala === 'c' ? validarConversao(temperatura, toFahrenheit) : temperatura;
+    const celsius = escala === 'f' ? validarConversao(temperatura, fahrenheitToCelsius) : temperatura;
+    const fahrenheit = escala === 'c' ? validarConversao(temperatura, celsiusToFahrenheit) : temperatura;
 
 /*O que deve ser renderizado: dois componentes Entrada, cada um é renderizado 
 com as props passadas */
