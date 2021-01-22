@@ -1,9 +1,10 @@
 import React from 'react'
 
-//Duas escalas de temperatura
+//Três escalas de temperatura
 const escalas = {
     c: 'Celsius',
-    f: 'Fahrenheit'
+    f: 'Fahrenheit',
+    k: 'Kelvin'
 };
 
 function toCelsius(fahrenheit) {
