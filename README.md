@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Aplicativo web de conversão entre unidades de medida de temperatura
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicativo web para fazer a conversão entre graus Kelvin, Celsius e Fahrenheit feito em **React**.
 
-## Available Scripts
+Veja [aqui](https://fabiomendes.me/conversor-temp-react/) a aplicação em funcionamento.
 
-In the project directory, you can run:
+Essa webapp é parte de um trabalho da disciplina de Desenvolvimento Web 2 que fiz em dupla com 
+[@DimasOliveira01](https://github.com/DimasOliveira01), em que o ojetivo era criar uma aplicação 
+para exemplificar o uso de React e Bootstrap.
 
-### `yarn start`
+A idéia veio ao ler a [documentação do React](https://reactjs.org/docs/lifting-state-up.html) em que 
+um dos exemplos era uma aplicação semelhante mas com a limitação de apenas converter de Celsiu para Fahrenheit.
+Baseado nesse exemplo foi adicionada a conversão para Kelvin.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Organização
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Neste repositório do GitHub há dois branches: 
+* **Master**: Com os arquivos organizados da forma padrão ao criarmos um aplicativo React, e;
+* **gh-pages**: Com a versão do webapp otimizada para deploy.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se gostou desse projeto não deixe de conhecer outros me seguindo nas redes sociais:
 
-### `yarn build`
+[**Veja meu perfil no Medium**](https://medium.com/@fabiomendes_95615)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[**Veja meu perfil no LinkedIn**](https://www.linkedin.com/in/fabio-mendes-35743b128)
