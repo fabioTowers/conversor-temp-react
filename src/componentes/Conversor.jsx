@@ -28,6 +28,10 @@ function celsiusToKelvin(celsius) {
     return celsius + 273;
 }
 
+function fahrenheitToKelvin(fahrenheit) {
+    return (((fahrenheit - 32) /9) *5) + 273;
+}
+
 //Essa função apenas valida se o que foi digitado na entrada não é um valor inválido
 //Recebe uma temperatura e uma funçao de conversão como argumentos
 function validarConversao(temperatura, funcaoDeConversao) {
