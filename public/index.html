@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Link de referência ao Bootstrap-->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+    
+    <!-- JAVASCRIPT E JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -28,16 +39,73 @@
   </head>
   <body>
     <noscript>É necessário que o JavaScript esteja habilitado para executar esse app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header>
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top ">
+          <h3 class="text-center div2">Conversor de Temperatura</h3>
+        </nav>
+      </div>
+    
+    </header>  
+    
+    <div class="container">		<!--a classe container é uma classe pronta no bootstrap-->
+      
+      
+      <div class="row">
+      
+        <!-- INÍCIO DO MENU CATEGORIA -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div1">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Celsius-Fahrenheit</div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Fahrenheit-Celsius</div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Celsius-Kelvin</div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Kelvin-Celsius</div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Fahrenheit-Kelvin</div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 div1">Kelvin-Fahrenheit</div>
+          </div>
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          <h2>Escalas termométricas</h2>
+            <p>As escalas termométricas são utilizadas para medir a temperatura (medida do grau de agitação das moléculas), ou seja, elas são utilizadas para indicar se um determinado corpo está quente ou frio. Já existiram diversas escalas termométricas ao longo da História, mas apenas três são utilizadas nos dias atuais, sendo elas: Celsius, Fahrenheit e Kelvin.</p>	
+          </div>
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          <h2>Celsius</h2>
+            <p>Embora inicialmente definido como ponto de congelação da água (e depois como ponto de fusão do gelo), a escala Celsius é agora oficialmente uma escala derivada, definida em relação à escala de temperatura Kelvin. O zero na escala Celsius (0 °C) é agora definido como equivalente a 273,15 K, com uma diferença de temperatura de 1 °C equivalente a uma diferença de 1 K, ou seja, o tamanho da unidade em cada escala é a mesma. Isto significa que 100 °C, previamente definido como o ponto de ebulição da água, é agora definido como equivalente a 373,15 K. A escala Celsius é um sistema de intervalo, mas não um sistema de relação, ou seja, segue uma escala relativa, mas não uma escala absoluta. Isto pode ser observado porque o intervalo de temperatura entre 20 °C e 30 °C é o mesmo que entre 30 °C e 40 °C, mas 40 °C não tem o dobro da energia térmica de um ar de 20 ° C.</p>	
+          </div>
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                      <h2>Kelvin</h2>
+            <p>O kelvin (símbolo: K) é a unidade SI de temperatura e é uma das sete unidades-base do SI. É definida por dois factos: zero kelvin é o zero absoluto (quando param os movimentos moleculares), e um kelvin é a fracção 1/273.16 da temperatura termodinâmica do ponto triplo da água (0.01°C). A escala de temperaturas Celsius é hoje definida em função do kelvin.</p>
+          </div>
+          
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+            <h2>Fahrenheit</h2>
+            <p>O Fahrenheit é uma escala de temperatura termodinâmica, onde o ponto de congelamento da água é de 32 graus Fahrenheit (°F) e o ponto de ebulição de 212 °F (com uma pressão atmosférica normal). Isso coloca os pontos de ebulição e de congelamento da água exatamente a 180 graus de separação. Por conseguinte, um grau na escala Fahrenheit é de 1/180 de intervalo entre o ponto de congelação e o ponto de ebulição da água. O zero absoluto é definido como igual a -459,67 °F. A diferença de temperatura de 1 °F é o equivalente a uma diferença de temperatura de 0,556 °C.</p>
+          </div>
+      
+        </div>		
+  
+        <!-- FIM DA EXIBIÇÃO DOS CONVERSORES E DEFINIÇÕES-->
+        <div id="root"></div>
+      </div>
+  
+    </div>
+    
+    <!-- INÍCIO DO RODAPÉ -->
+      <footer>
+          <p class="text-center" style="background-color: black;color:white">
+               &copy;2021 - Empresa X</br>
+               CNPJ: 00.000.000/000-00</br>
+               Endereço: rua tal, num 0, - São Paulo - SP - CEP: 00.00-000</br>
+               Designer: <a href="#" target="_blank">Dimas e Fábio</a>
+          </p>
+      </footer>
+  <!-- FIM DO RODAPÉ -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
