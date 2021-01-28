@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './style.css'
 
 //importando o componente react
 import Conversor from './componentes/Conversor'
