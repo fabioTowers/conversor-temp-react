@@ -1,5 +1,5 @@
 .container{
-	border: 3px solid green;
+	/*border: 3px solid green;*/
 }
 
 .div1{
@@ -21,12 +21,12 @@
 }
 
 .menu-superior li{
-	color: white;
+	/*color: white;*/
 }
 
 
 .menu-superior li a{
-	border-left: 1px solid white;
+	/*border-left: 1px solid white;*/
 }
 
 
@@ -52,7 +52,7 @@ p,li{
 
 header .navbar{
 	background-color: #353D41;
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 }
 
 #nav-container{
@@ -75,4 +75,17 @@ header .navbar{
 
 .navbar-expand-lg .navbar-nav .nav-link{
 	padding: 1rem.8rem;
+}
+
+#root{
+	padding: 20px;
+}
+
+input{
+	border-radius: 5px;
+}
+
+legend{
+	font-size: 14px;
+	font-weight: bold;
 }
